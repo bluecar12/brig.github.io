@@ -34,7 +34,7 @@
         <a href="#treats">Treats</a>
         <a href="#story">Story</a>
         <a href="#festa">Festa</a>
-        <a class="btn btn-small" href="#visit">Taste them</a>
+        <a class="btn btn-small" href="#visit">Get drops</a>
       </nav>
     </header>
 
@@ -235,18 +235,37 @@
       </section>
 
       <section id="visit" class="cta">
-        <p class="eyebrow">Come hungry</p>
-        <h2>Taste Brazil the way a birthday table intends it.</h2>
+        <p class="eyebrow">Drops, not a daily menu</p>
+        <h2>Sign up for updates and the next chance to order.</h2>
         <p>
-          Brigadeiros &amp; Co is a digital padaria: stories, names, and a standing invitation
-          to cook, order, or host a tray of your own. No gatekeeping. Extra
-          granulado.
+          Brigadeiros &amp; Co trays are cooked in batches. Some weeks there is
+          a full festa box; some weeks there isn’t. Join the list and we’ll
+          email you when something is coming — so you can order before it
+          disappears.
         </p>
-        <form class="signup" id="signup">
+        <form
+          class="signup"
+          id="signup"
+          action="https://formspree.io/f/mqpakpqk"
+          method="POST"
+          accept-charset="UTF-8"
+        >
+          <input type="hidden" name="_subject" value="Brigadeiros & Co waitlist" />
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
           <label class="sr" for="email">Email</label>
           <input id="email" name="email" type="email" required placeholder="you@email.com" />
-          <button class="btn" type="submit">Save me a brigadeiro</button>
-          <p class="form-note" id="form-note" hidden>Saved. We’ll pretend this is a real mailing list until you plug one in.</p>
+          <fieldset class="interests">
+            <legend>Tell me about</legend>
+            <label><input type="checkbox" name="treats" value="Brigadeiros" checked /> Brigadeiros</label>
+            <label><input type="checkbox" name="treats" value="Pão de mel" /> Pão de mel</label>
+            <label><input type="checkbox" name="treats" value="Coxinha" /> Coxinha</label>
+            <label><input type="checkbox" name="treats" value="Pão de queijo" /> Pão de queijo</label>
+            <label><input type="checkbox" name="treats" value="Beijinho" /> Beijinho</label>
+            <label><input type="checkbox" name="treats" value="Whatever is next" /> Whatever is next</label>
+          </fieldset>
+          <button class="btn" id="signup-submit" type="submit">Join the waitlist</button>
+          <p class="form-fine">We’ll only write when there is a drop or news. No daily emails.</p>
+          <p class="form-note" id="form-note" hidden></p>
         </form>
       </section>
     </main>
