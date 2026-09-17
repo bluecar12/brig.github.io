@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brigadeiros &amp; Co — Brazilian treats, from brigadeiro to pão de queijo</title>
+    <meta
+      name="description"
+      content="Brigadeiros & Co is a love letter to Brazilian confeitaria: brigadeiros, pão de mel, coxinha, pão de queijo, and the sweets that show up at every festa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Outfit:wght@360;460;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#treats">Skip to treats</a>
+    <header class="nav">
+      <a class="mark" href="#top">Brigadeiros <span class="amp">&amp; Co</span></a>
+      <nav>
+        <a href="#treats">Treats</a>
+        <a href="#story">Story</a>
+        <a href="#festa">Festa</a>
+        <a class="btn btn-small" href="#visit">Taste them</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Doces &amp; salgados do Brasil</p>
+        <h1>Brazilian cuisine, starting with the treats people fight over.</h1>
+        <p class="lede">
+          Brigadeiro at birthday tables. Pão de queijo still steaming.
+          Coxinha that never makes it to the second tray. This is the Brazil
+          that lives in kitchens, padarias, and late-night cravings.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#treats">Meet the treats</a>
+          <a class="btn btn-ghost" href="#story">Why they matter</a>
+        </div>
+        <ul class="hero-pills" aria-label="Featured treats">
+          <li>Brigadeiro</li>
+          <li>Pão de mel</li>
+          <li>Coxinha</li>
+          <li>Pão de queijo</li>
+          <li>Beijinho</li>
+        </ul>
+      </section>
+
+      <section class="band">
+        <figure class="hero-photo">
+          <img
+            src="https://images.pexels.com/photos/5365924/pexels-photo-5365924.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="A tray of Brazilian brigadeiros rolled in chocolate sprinkles, coconut, and nuts"
+            width="1600"
+            height="1067"
+          />
+          <figcaption>Brigadeiros — the unofficial national party sweet.</figcaption>
+        </figure>
+      </section>
+
+      <section id="treats" class="section">
+        <div class="section-head">
+          <p class="eyebrow">The menu</p>
+          <h2>Sweet, savory, and impossible to eat just one.</h2>
+          <p>
+            Filter the tray. Every name is Portuguese on purpose — that’s how
+            they show up on real menus.
+          </p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Treat type">
+          <button class="chip is-active" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="doce" type="button">Doces</button>
+          <button class="chip" data-filter="salgado" type="button">Salgados</button>
+        </div>
+        <div class="grid" id="treat-grid">
+          <article class="card" data-kind="doce">
+            <img
+              src="https://images.pexels.com/photos/5365924/pexels-photo-5365924.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Close-up of chocolate brigadeiros with colorful toppings"
+            />
+            <div class="card-body">
+              <p class="tag">Doce · festa</p>
+              <h3>Brigadeiro</h3>
+              <p>
+                Condensed milk, cocoa, and butter cooked until glossy, then
+                rolled in granulado. Named after Brigadeiro Eduardo Gomes, it
+                became Brazil’s birthday cake in bite form.
+              </p>
+            </div>
+          </article>
+          <article class="card" data-kind="doce">
+            <img
+              src="images/pao-de-mel.jpg"
+              alt="Chocolate-covered Brazilian pão de mel, one piece cut open to show honey cake and doce de leite"
+            />
+            <div class="card-body">
+              <p class="tag">Doce · spice</p>
+              <h3>Pão de mel</h3>
+              <p>
+                A honey-spice cake dunked in chocolate, closer to a Brazilian
+                gingerbread than a loaf. Soft crumb, clove and cinnamon, and a
+                snap of couverture on the outside.
+              </p>
+            </div>
+          </article>
+          <article class="card" data-kind="salgado">
+            <img
+              src="https://images.pexels.com/photos/17409458/pexels-photo-17409458.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Close-up of a Brazilian coxinha with dipping sauces"
+            />
+            <div class="card-body">
+              <p class="tag">Salgado · boteco</p>
+              <h3>Coxinha</h3>
+              <p>
+                Shredded chicken tucked into dough shaped like a little drumstick
+                (a coxinha de galinha), breaded and fried until the crust
+                shatters. The salgado that empties first.
+              </p>
+            </div>
+          </article>
+          <article class="card" data-kind="salgado">
+            <img
+              src="https://images.pexels.com/photos/34472660/pexels-photo-34472660.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Coffee with pão de queijo and dulce de leche on a São Paulo table"
+            />
+            <div class="card-body">
+              <p class="tag">Salgado · Minas</p>
+              <h3>Pão de queijo</h3>
+              <p>
+                Cassava starch and cheese baked into chewy, hollow rolls. Gluten
+                free by tradition, not by trend — a Minas Gerais breakfast that
+                now lives in every Brazilian airport.
+              </p>
+            </div>
+          </article>
+          <article class="card" data-kind="doce">
+            <img
+              src="images/beijinho.jpg"
+              alt="Brazilian beijinhos rolled in shredded coconut and topped with cloves"
+            />
+            <div class="card-body">
+              <p class="tag">Doce · coco</p>
+              <h3>Beijinho</h3>
+              <p>
+                Brigadeiro’s coconut cousin: condensed milk and coco ralado,
+                rolled in more coconut, finished with a clove. The name means
+                little kiss.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="story" class="section story">
+        <div class="story-copy">
+          <p class="eyebrow">A cozinha, not a trend</p>
+          <h2>These aren’t “fusion bites.” They’re how Brazil celebrates.</h2>
+          <p>
+            Brazilian food is regional, loud, and generous. Minas cheeses,
+            Bahia’s Afro-Brazilian sweets, São Paulo bakeries, Rio botecos.
+            Treats sit at the center of that map because they travel well:
+            a paper box of brigadeiros, a warm bag of pão de queijo, a
+            coxinha eaten standing up.
+          </p>
+          <p>
+            Brigadeiros &amp; Co exists to put those names in lights — spelled right, plated
+            with respect, and explained for anyone who has only met Brazil
+            through barbecue.
+          </p>
+        </div>
+        <aside class="notes">
+          <h3>Tasting notes</h3>
+          <dl>
+            <div>
+              <dt>Brigadeiro</dt>
+              <dd>Fudge, cocoa, a little salt. Best at room temperature.</dd>
+            </div>
+            <div>
+              <dt>Pão de mel</dt>
+              <dd>Honey, clove, dark chocolate. Afternoon coffee food.</dd>
+            </div>
+            <div>
+              <dt>Coxinha</dt>
+              <dd>Crisp shell, creamy chicken, a squeeze of lime if you must.</dd>
+            </div>
+            <div>
+              <dt>Pão de queijo</dt>
+              <dd>Stretchy crumb, sharp cheese, eaten while it still sighs steam.</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="festa" class="section festa">
+        <div class="section-head">
+          <p class="eyebrow">How Brazilians serve them</p>
+          <h2>A festa table is a landscape.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <strong>Docinhos on a platter</strong>
+            Brigadeiros and beijinhos in little paper cups, mixed colors, never
+            in a single sad row.
+          </li>
+          <li>
+            <strong>Salgados pass first</strong>
+            Coxinha, kibe, empada — savory before cake, so nobody peaks too early.
+          </li>
+          <li>
+            <strong>Pão de queijo is not dessert</strong>
+            It belongs with coffee, breakfast, or the gap between lunch and
+            whatever happens next.
+          </li>
+          <li>
+            <strong>Pão de mel travels</strong>
+            Wrapped, gifted, packed in tins. The treat you take on the plane.
+          </li>
+        </ol>
+      </section>
+
+      <section id="visit" class="cta">
+        <p class="eyebrow">Come hungry</p>
+        <h2>Taste Brazil the way a birthday table intends it.</h2>
+        <p>
+          Brigadeiros &amp; Co is a digital padaria: stories, names, and a standing invitation
+          to cook, order, or host a tray of your own. No gatekeeping. Extra
+          granulado.
+        </p>
+        <form class="signup" id="signup">
+          <label class="sr" for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@email.com" />
+          <button class="btn" type="submit">Save me a brigadeiro</button>
+          <p class="form-note" id="form-note" hidden>Saved. We’ll pretend this is a real mailing list until you plug one in.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Brigadeiros &amp; Co</strong> · Brazilian treats, explained with affection.</p>
+      <p>Coxinha, not cozinha — though both belong in a good kitchen.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
