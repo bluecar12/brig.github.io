@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <script>
+      if (
+        location.protocol === "http:" &&
+        location.hostname !== "localhost" &&
+        location.hostname !== "127.0.0.1"
+      ) {
+        location.replace("https:" + location.href.slice(location.protocol.length));
+      }
+    </script>
     <title>Brigadeiros &amp; Co — Brazilian treats, from brigadeiro to pão de queijo</title>
     <meta
       name="description"
@@ -87,8 +97,9 @@
               <h3>Brigadeiro</h3>
               <p>
                 Condensed milk, cocoa, and butter cooked until glossy, then
-                rolled in granulado. Named after Brigadeiro Eduardo Gomes, it
-                became Brazil’s birthday cake in bite form.
+                rolled in granulado. Brigadeiros can also come in many other
+                flavors. Named after Brigadeiro Eduardo Gomes, it became
+                Brazil’s birthday cake in bite form.
               </p>
             </div>
           </article>
@@ -102,8 +113,9 @@
               <h3>Pão de mel</h3>
               <p>
                 A honey-spice cake dunked in chocolate, closer to a Brazilian
-                gingerbread than a loaf. Soft crumb, clove and cinnamon, and a
-                snap of couverture on the outside.
+                gingerbread than a loaf, and filled with dulce de leche. Soft
+                crumb, clove and cinnamon, and a snap of couverture on the
+                outside.
               </p>
             </div>
           </article>
@@ -116,9 +128,9 @@
               <p class="tag">Salgado · boteco</p>
               <h3>Coxinha</h3>
               <p>
-                Shredded chicken tucked into dough shaped like a little drumstick
-                (a coxinha de galinha), breaded and fried until the crust
-                shatters. The salgado that empties first.
+                Creamy shredded chicken tucked into dough shaped like a little
+                drumstick (a coxinha de galinha), breaded and fried until the
+                crust shatters. The salgado that empties first.
               </p>
             </div>
           </article>
@@ -181,7 +193,7 @@
             </div>
             <div>
               <dt>Pão de mel</dt>
-              <dd>Honey, clove, dark chocolate. Afternoon coffee food.</dd>
+              <dd>Honey, clove, dark chocolate, filled with dulce de leche. Afternoon coffee food.</dd>
             </div>
             <div>
               <dt>Coxinha</dt>
